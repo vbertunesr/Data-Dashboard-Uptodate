@@ -1,24 +1,20 @@
 body{
-    font-family: sans-serif;
+    font-family: 'arial';
     margin: 0 auto;
     padding: 0;
 }
-
 .logo{
   width: 15%;
 }
-
 #check{
   display:none;
 }
-
 #icone{
   cursor: pointer;
   padding: 15px;
   position: absolute;
   z-index: 1;
 }
-
 .menu{
   background-color: #333;
   height: 300px;
@@ -27,28 +23,25 @@ body{
   transition: all .2s linear;
   left: -300px;
 }
-
-.menuHorizontal{
-  background-color: #333;
+.menuDois{
+  background-color: #2e2e2a;
   width: 100%;
   display: flex;
   justify-content: center;
+  height:50px;
+  font-family: 'Arial';
 }
-
 #check:checked ~ .menu{
   transform: translateX(300px);
 }
-
 nav{
   width: 200px;
   position: absolute;
   top: 60px;
 }
-
 nav a{
   text-decoration: none;
 }
-
 .link{
   background-color: #494950;
   padding: 20px;
@@ -58,63 +51,48 @@ nav a{
   color: #F4F4F9;
   border-bottom: 2px solid #222;
 }
-
 .link:hover{
   background-color: #f9a91a;
 }
-
-.perfil, .dados{
-  display: inline-block;
-}
-
 .header{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
 .header ul{
-    list-style: none;
     padding: 0;
     margin: 0;
-    line-height: 40px;
-    overflow: auto;
+    line-height: 20px;
     align-items: center;
+    list-style: none;
+    position: relative;
 }
-
-.header ul ul {
-    display: none;
-}
-
-.header li{
-    width: 100px;
+.header ul li{
+    width: 150px;
     float: left;
 }
-
-a {
-    text-decoration: none;
+.header a{
+    padding: 15px;
     display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #2e2e2a;
     color: #fff;
 }
-
-.header ul li:hover > ul{
-    display: block;
+.header ul ul {
+    position: absolute;
+    visibility: hidden;
 }
-
-a:hover {
+.header ul li:hover ul{
+    visibility: visible;
+}
+.header a:hover{
     background: #f9a91a;
     color: #000;
 }
-
-.perfil{
-  background-color: green;
-}
-
-.dados{
-  background-color: orange;
-}
-
-.footer{
-  background-color: red;
+.header ul ul li{
+    float: none;
+    border-bottom: solid 1px #ccc;
+    text-align: center;
 }
