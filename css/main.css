@@ -1,45 +1,98 @@
-body,html {
-    font-family: sans-serif;
-    margin: 0;
+body{
+    font-family: 'arial';
+    margin: 0 auto;
     padding: 0;
 }
-img{
-    display: flex;
-    height: 100px;
-    justify-content: center;
-   align-items: center;
-
+.logo{
+  width: 15%;
 }
-ul{
+#check{
+  display:none;
+}
+#icone{
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+}
+.menu{
+  background-color: #333;
+  height: 300px;
+  width: 200px;
+  position: absolute;
+  transition: all .2s linear;
+  left: -300px;
+}
+.menuDois{
+  background-color: #2e2e2a;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height:50px;
+  font-family: 'Arial';
+}
+#check:checked ~ .menu{
+  transform: translateX(300px);
+}
+nav{
+  width: 200px;
+  position: absolute;
+  top: 60px;
+}
+nav a{
+  text-decoration: none;
+}
+.link{
+  background-color: #494950;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .2s linear;
+  color: #F4F4F9;
+  border-bottom: 2px solid #222;
+}
+.link:hover{
+  background-color: #f9a91a;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header ul{
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+    align-items: center; 
     list-style: none;
-    padding: 0;
-    margin: 0;
-    background: #2e2e2a;
-    line-height: 40px;
-    overflow: auto;
-    
+    position: relative;
 }
-ul ul {
-    display: none;
-}
-
-li{
-    width: 100px;
-    text-align: center;
+.header ul li{
+    width: 150px;
     float: left;
 }
-
-a {
-    text-decoration: none;
+.header a{
+    padding: 15px;
     display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #2e2e2a;
     color: #fff;
 }
-ul li:hover > ul{
-    display: block;
+.header ul ul {
+    position: absolute;
+    visibility: hidden;
 }
-
-a:hover {
+.header ul li:hover ul{
+    visibility: visible;
+}
+.header a:hover{
     background: #f9a91a;
     color: #000;
-
+}
+.header ul ul li{
+    float: none;
+    border-bottom: solid 1px #ccc;
+    text-align: center;
 }
