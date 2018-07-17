@@ -1,31 +1,94 @@
-body,html {
+body{
     font-family: sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
-img{
-    display: flex;
-    height: 100px;
-    justify-content: center;
-   align-items: center;
 
+.logo{
+  width: 15%;
 }
-ul{
+
+#check{
+  display:none;
+}
+
+#icone{
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+}
+
+.menu{
+  background-color: #333;
+  height: 300px;
+  width: 200px;
+  position: absolute;
+  transition: all .2s linear;
+  left: -300px;
+}
+
+.menuHorizontal{
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#check:checked ~ .menu{
+  transform: translateX(300px);
+}
+
+nav{
+  width: 200px;
+  position: absolute;
+  top: 60px;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+.link{
+  background-color: #494950;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .2s linear;
+  color: #F4F4F9;
+  border-bottom: 2px solid #222;
+}
+
+.link:hover{
+  background-color: #f9a91a;
+}
+
+.perfil, .dados{
+  display: inline-block;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header ul{
     list-style: none;
     padding: 0;
     margin: 0;
-    background: #2e2e2a;
     line-height: 40px;
     overflow: auto;
-    
+    align-items: center;
 }
-ul ul {
+
+.header ul ul {
     display: none;
 }
 
-li{
+.header li{
     width: 100px;
-    text-align: center;
     float: left;
 }
 
@@ -34,12 +97,24 @@ a {
     display: block;
     color: #fff;
 }
-ul li:hover > ul{
+
+.header ul li:hover > ul{
     display: block;
 }
 
 a:hover {
     background: #f9a91a;
     color: #000;
+}
 
+.perfil{
+  background-color: green;
+}
+
+.dados{
+  background-color: orange;
+}
+
+.footer{
+  background-color: red;
 }
