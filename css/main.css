@@ -4,24 +4,7 @@ body{
     padding: 0;
 }
 .logo{
-  width: 25%;
-}
-#check{
-  display:none;
-}
-#icone{
-  cursor: pointer;
-  padding: 15px;
-  position: absolute;
-  z-index: 1;
-}
-.menu{
-  background-color: #333;
-  height: 300px;
-  width: 200px;
-  position: absolute;
-  transition: all .2s linear;
-  left: -300px;
+  width: 15%;
 }
 .menuDois{
   background-color: #2e2e2a;
@@ -30,9 +13,6 @@ body{
   justify-content: center;
   height:50px;
   font-family: 'Arial';
-}
-#check:checked ~ .menu{
-  transform: translateX(300px);
 }
 nav{
   width: 200px;
@@ -59,7 +39,6 @@ nav a{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f9a91a;
 }
 .header ul{
     padding: 0;

@@ -29,5 +29,3 @@ function desativaBotao(){
     document.getElementById('sendNote').disabled = true;
   }
 }
-
-

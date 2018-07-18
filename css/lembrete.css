@@ -1,15 +1,16 @@
-
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'arial';
- 
+    font-family: sans-serif;
 }
 .cabeçalho{
     background-color: #f9a91a;
     padding: 10px;
-    color: #000;
+    color: #fff;
     font-weight: 600;
+}
+.logo{
+    width: 30%;
 }
 nav{
     background-color: #2e2e2a;
@@ -17,13 +18,12 @@ nav{
     display: flex;
     justify-content: center;
     height:50px;
-    font-family: 'Arial';
 }
 ul{
       padding: 0;
       margin: 0;
       line-height: 20px;
-      align-items: center; 
+      align-items: center;
       list-style: none;
       position: relative;
 }
@@ -56,7 +56,6 @@ ul li{
       text-align: center;
  }
 textarea{
-    font-family: 'helvetica';
     font-weight: 400px;
     resize: none;
 }
@@ -65,39 +64,29 @@ div.anotar{
     overflow: auto;
 }
 #sendNote {
-    display: block;
-    width: 60px;
+    width: 200px;
     height: 30px;
-    font-family: 'comic sans';
-    background-color:silver;
-    border: 2px solid #fff;
-    float: center;
-    border-radius: 10px;
+    float: left;
+    border: none;
+    margin-left: 260px;
+    font-weight: bold;
+    border-radius: 15px;
    }
-#sendNote:hover{
-    background-color: gray;
-}
 .notes{
     padding: 20px;
     margin: 5px auto;
-    background-color: #fff;
     width: 800px;
-    float: center;
 }
 #note{
     font-size: 20px;
-    font-family: 'helvetica';
 }
 #limiteTexto{
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
+    color: #f9a91a;
 }
 .styleColor{
-    padding: 4px;
+    padding: 10px;
     border-radius: 20px;
-    background-color: aquamarine;
-}
-#note p{
-    color: purple;
-    margin-left: 10px;
+    background-color: #f9a91a;
 }
