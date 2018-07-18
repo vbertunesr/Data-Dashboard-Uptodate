@@ -52,3 +52,12 @@ function informacoes(){
     }
   }
 }
+//pontuação média mentores e jedis
+function mediaMentoresJedis(ratings, teacher){
+  var mentores = '';
+  var jedis = '';
+
+  for(teacher in data[sede][turma]['ratings'][i]['teacher']){
+
+  }
+}

@@ -1,20 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="alunas.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"/> -->
   <meta charset="utf-8">
-  <title>Alunas</title>
+  <title>Data Dashboard</title>
 </head>
 <body>
-  <select id="drop-menu">
-    <!-- <option value="none" selected>selecione</option>
-    <option value="AQP">Arequipa</option>
-    <option value="LIM">Lima</option>
-    <option value="CDMX">Cidade do México</option>
-    <option value="SCL">Santiago</option> -->
-  </select>
-  <div id="alunas"></div>
+    <header class="header">
+        <!-- <img class="logo" src="assets/images/logo1.jpeg"> -->
+        <div class="menuDois">
+          <ul>
+                <li><a href="alunas.html">Alunas</a>
+                  <ul>
+                    <li><a href="#">Adcionar Aluna</a></li>
+                    <li><a href="#">Remover Aluna</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Notas</a>
+                 <ul>
+                   <li><a href="#">Sprint 1</a></li>
+                   <li><a href="#">Sprint 2</a></li>
+                   <li><a href="#">Sprint 3</a></li>
+                 </ul>
+                 </li></li>
+               </li></li>
+               <li><a href="#">Overview</a></li>
+             </ul>
+        </div>
+      </header>
+      <div class='menu'>
+  <select id="localSede"></select>
+  <select id="turmaGeneration"></select>
+  </div>
+  <section id="perfilAlunas">
+    </section>
+    <section id="inscritas">
+        <h1 class="dados" id="matriculadas"></h1>
+        <div id="qtdAlunas"></div>
+        <div id="desistencia"></div>
+      </section>
+      <section id="objetivo">
+        <h1 class="info-title" id="titleObjetivo"></h1>
+         <div id="mediaAlunas"></div>
+         <div id="mediaPorcentoAlunas"></div>
+       </section>
+ 
+       <section id="nps">
+         <h1 class="info-title" id="dadosNps"></h1>
+         <div id="finalNps"></div>
+         <div id="medioSpeciNps"></div>
+       </section>
+ 
+       <section id="satisfied">
+         <h1 class="info-title" id="satisfiedData"></h1>
+         <div id="porcentagemSatisfied"></div>
+       </section>
+ 
+       <section id="techPoints">
+         <h1 class="info-title" id="techData"></h1>
+         <div id="techNumber"></div>
+         <div id="porcentagemTech"></div>
+       </section>
+ 
+       <section id="hsePoints">
+         <h1 class="info-title" id="hseData"></h1>
+         <div id="hseNumber"></div>
+         <div id="porcentagemHse">
+         </div>
+       </section>
+ 
+       <section id="mentors">
+         <h1 class="info-title" id="mentoresData"></h1>
+         <div id="pontosMentores"></div>
+       </section>
+ 
+       <section id="jedi">
+         <h1 class="info-title" id="jediData"></h1>
+         <div id="pontosJedi"></div>
+       </section> 
 <script type="text/javascript" src="js/data.js"></script>
-<script type="text/javascript" src="js/alunas.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

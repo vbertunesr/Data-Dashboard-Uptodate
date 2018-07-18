@@ -4,7 +4,7 @@ body{
     padding: 0;
 }
 .logo{
-  width: 15%;
+  width: 25%;
 }
 #check{
   display:none;
@@ -59,6 +59,7 @@ nav a{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #f9a91a;
 }
 .header ul{
     padding: 0;
